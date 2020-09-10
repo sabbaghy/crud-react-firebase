@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './firebase'
-import 'bootswatch/dist/superhero/bootstrap.min.css'
+import 'bootswatch/dist/solar/bootstrap.min.css'
 import 'material-icons'
 
 ReactDOM.render(
