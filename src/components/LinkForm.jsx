@@ -83,7 +83,7 @@ const LinkForm = (props) => {
          <button
             className="btn btn-success btn-block"
          >
-            {(props.currentId === '' ? 'Save' : 'Update`' )}
+            {(props.currentId === '' ? 'Save' : 'Update' )}
          </button>
       </form>
    )
