@@ -13,6 +13,20 @@ const Logo = styled.div`
    }
 `
 
+const MenuToggle = styled.div`
+   width:25px;
+   height:25px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   background:red;
+   border-radius:5px;
+   cursor: pointer;
+   
+   &:hover {
+      background:blue;
+   }
+`
 const Navbar = styled.div`
    display:flex;
    justify-content:space-between;
@@ -54,9 +68,12 @@ const Navegation = () => (
                <MenuItems><MenuLink to="/">Login</MenuLink></MenuItems>
                <MenuItems><MenuLink to="/home">Home</MenuLink></MenuItems>
                <MenuItems><MenuLink to="/crud">Crud</MenuLink></MenuItems>
+               <MenuItems><MenuLink to="/usuario">Users</MenuLink></MenuItems>
             </Menu>
          </nav>
-         <i className="bg-light material-icons"> menu </i>
+         <MenuToggle>
+            <i className="material-icons"> menu </i>
+         </MenuToggle>
       </Navbar>
    )
 

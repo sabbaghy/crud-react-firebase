@@ -1,0 +1,42 @@
+   // $MainClr: #5da8a0;
+   $SecClr: #607123;
+   $TxtClrLight: #f2f0ec;
+   $TxtClrDark: #373737;
+   $BgClrLight: #f4f4ea;
+   $BgClrDark: #blue;
+   $AccentClr: red;
+
+
+.login-content {
+   width: 80%;
+   height: 60vh;
+   margin: 10vh auto;
+   background: $BgClrDark;
+   color: $TxtClrLight;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-content: center;
+   align-items: center;
+   border-radius: 15px;
+}
+
+.btn{
+   width: fit-content;
+   height: 35px;
+   display: inline-block;
+   border-radius: 5px;
+   border:none;
+   color: $BgClrDark;
+   outline: none;
+   font-size: 1rem;
+   margin-bottom: 20px;
+   padding: 0 2rem;
+}
+
+.label-error{
+   font-size: .75rem;
+   color: $AccentClr;
+   width: fit-content;
+   height: fit-content;
+}

@@ -9,11 +9,13 @@
     "bootswatch": "^4.5.2",
     "firebase": "^7.19.1",
     "material-icons": "^0.3.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-toastify": "^6.0.8",
+    "shortid": "^2.2.15",
     "styled-components": "^5.2.0"
   },
   "scripts": {
