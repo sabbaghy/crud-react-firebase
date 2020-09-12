@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { db } from '../firebase'
+import { db } from '../../firebase'
 
 const LinkForm = (props) => {
       
@@ -42,12 +42,12 @@ const LinkForm = (props) => {
       >
          <div className="form-group input-group">
             <div className="input-group-text bg-light">
-               <i className="material-icons">insert_link</i>
+               <i className="material-icons">person</i>
             </div>
             <input
                type="text"
                className="form-control"
-               placeholder="htpps://someurl.com"
+               placeholder="User Name"
                name="url"
                value={values.url}
                onChange={handleInputChange}
@@ -56,12 +56,12 @@ const LinkForm = (props) => {
 
          <div className="form-group input-group">
             <div className="input-group-text bg-light">
-               <i className="material-icons">create</i>
+               <i className="material-icons">mail</i>
             </div>
             <input
                type="text"
                className="form-control"
-               placeholder="Website name "
+               placeholder="Your e-mail address"
                name="name"
                onChange={handleInputChange}
                value={values.name}

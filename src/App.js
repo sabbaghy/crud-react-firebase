@@ -1,24 +1,39 @@
 import React from 'react';
+import {
+   BrowserRouter as Router,
+   Route,
+   Switch,
+} from 'react-router-dom'
+
+import {createGlobalStyle} from 'styled-components'
+
 import './App.css';
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Home from './components/Home/Home'
+import Login from './components/Login/Login'
+import Crud from './components/Crud/Crud'
+import Navegation from './components/Menu/Navegation'
 
-import Links from './components/Links'
+const GlobalStyle = createGlobalStyle`
+   body{
+      margin:0;
+   }
+`
 
 function App() {
    return (
-
-
-      <div
-         className='container p-4'
-      >
-         <div className="row">
-            <Links/ >
-         </div>
-         <ToastContainer />
-      </div>
-  );
+      <>
+         <Router>
+            <GlobalStyle />
+            <Navegation />
+            <Switch>
+               <Route exact path='/' component={Login} />
+               <Route path='/home' component={Home} />
+               <Route path='/crud' component={Crud} />
+            </Switch>
+         </Router>
+      </>
+   );
 }
 
 export default App;

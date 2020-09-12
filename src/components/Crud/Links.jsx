@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import LinkForm from './LinkForm'
 
-import {db} from '../firebase'
+import {db} from '../../firebase'
 
 const Links = () => {
 
